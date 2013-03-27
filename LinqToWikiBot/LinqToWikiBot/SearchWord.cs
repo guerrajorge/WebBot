@@ -132,7 +132,11 @@ namespace LinqToWikiBot
         }
 
     }
-
+    
+    /*
+     * Structure of the information obtain from Wikipedia
+     * and how it is going to be passed to the database
+     **/ 
     struct information_structure
     {
         public String category;
