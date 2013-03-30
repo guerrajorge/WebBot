@@ -15,6 +15,8 @@ namespace LinqToWikiBot
         static WikipediaContext datacontext = new WikipediaContext();
         static Dictionary<int, information_structure> dictionary = new Dictionary<int, information_structure>();
         static information_structure info_struc;
+        static int rn;
+        static Random random_gen;
 
 
 
@@ -25,7 +27,9 @@ namespace LinqToWikiBot
             foreach (KeyValuePair<int, information_structure> value in dictionary)
             {
                 sb.AppendLine(value.Value.question + "?");
-                sb.AppendLine(value.Value.answer);
+                sb.AppendLine(value.Value.answer + "    " + value.Value.wrong_answers[0]
+                    + "    " + value.Value.wrong_answers[1] + "    " + value.Value.wrong_answers[2]);
+                sb.AppendLine();
             }
 
             using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml"))
@@ -112,7 +116,7 @@ namespace LinqToWikiBot
 
                 foreach (WikipediaOpenSearchResult result in opensearch)
                 {
-                    Console.WriteLine(i + " Processing word: " + info_struc.answer.ToString());
+                    Console.WriteLine(i + " Processing subject: " + info_struc.answer.ToString());
                     /*
                      * add the descriptions of the searched subject to the StringBuilder sb2 and replaces
                      * the subject with ""(empty string") so the subject name is not shown in the question
@@ -124,6 +128,7 @@ namespace LinqToWikiBot
                      **/
                     formatString(sb2);
                     info_struc.question = sb2.ToString();
+                    info_struc.wrong_answers = fill_wrong_answers(list_subjects);
                     //add the name and question to the dictionary list
                     dictionary.Add(i, info_struc);
                     //clears sb2 becuase if not then everytime we run dictionary.add ... whatever information is
@@ -132,6 +137,30 @@ namespace LinqToWikiBot
                 }
             }
         }
+
+        private string[] fill_wrong_answers(System.Collections.ArrayList list_subjects)
+        {
+            int number_subjects = list_subjects.Count;
+            String[] cuatro_answers = new String[3];
+            random_gen = new Random(number_subjects);
+
+            for (int j = 0; j < 3; j++)
+            {
+                rn = GetRandomNumber(0,number_subjects);
+                cuatro_answers[j] = list_subjects[rn].ToString();
+            }
+
+            return cuatro_answers;
+        }
+
+        //Function to get random number
+        private static readonly Random getrandom = new Random();
+        private static readonly object syncLock = new object();
+        public static int GetRandomNumber(int min, int max)
+         {
+           lock(syncLock)
+                    return getrandom .Next(min, max);
+         }
     }
     
     /*
@@ -143,6 +172,7 @@ namespace LinqToWikiBot
         public String category;
         public String question;
         public String answer;
+        public String[] wrong_answers;
     };
 
 }

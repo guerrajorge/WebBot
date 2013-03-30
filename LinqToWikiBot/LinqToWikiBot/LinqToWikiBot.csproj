@@ -55,7 +55,7 @@
   <ItemGroup>
     <Compile Include="Search_Subject_Title.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchWord.cs" />
+    <Compile Include="SearchWord_Description.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -12,6 +12,7 @@ using System.Web;
 using System.Xml;
 using System.Xml.XPath;
 using LinqToWiki.Generated;
+using LinqToWikipedia;
 
 namespace LinqToWikiBot
 {
@@ -21,6 +22,7 @@ namespace LinqToWikiBot
         static String response;
         static ArrayList list_subjects = new ArrayList();
         static string[] namesArray;
+        static SearchWord_Description word_descrition = new SearchWord_Description();
 
         static void Main(string[] args)
         {
@@ -29,33 +31,58 @@ namespace LinqToWikiBot
             Console.WriteLine("Input a subject");
             string subject = System.Console.ReadLine();
 
+            if (subject.StartsWith("Category"))
+                category(subject);
+
+            else not_category(subject);
+
+
+            word_descrition.obtain_information(list_subjects);
+            word_descrition.Write_Console();
+        }
+
+        private static void category(string subject)
+        {
+            var wiki = new Wiki("TheNameOfMyBot/1.0 (http://website, myemail@site)", "en.wikipedia.org");
+
+            var pages = (from cm in wiki.Query.categorymembers()
+                         where cm.title == subject
+                         select cm.title)
+            .ToEnumerable();
+
+            Write(pages);
+        }
+
+        private static void Write<T>(IEnumerable<T> results)
+        {
+            var array = results.ToArray();
+
+            foreach (var result in array)
+                list_subjects.Add(result);
+
+            list_subjects.Sort();
+            Console.WriteLine("Done obtaining and processing subjects");
+            Console.WriteLine("Number of subjects: " + list_subjects.Count);
+        }
+
+        private static void not_category(string subject)
+        {
             //This is where we are going to get the information
             Uri address = getAddress(subject);
 
             WebClient client = new WebClient();
             obtainsubjects(address, client);
-
-            SearchWord_Description word_descrition = new SearchWord_Description();
-
-            word_descrition.obtain_information(list_subjects);
-            word_descrition.Write_Console();
-            
         }
 
         private static void obtainsubjects(Uri address, WebClient client)
         {
-
             client.Headers.Add("User-Agent", "TriviaGame");
-
             try
             {
                 //Obtaind the string from the URI type variable
                 response = client.DownloadString(address);
                 //Formats it in the right way
                 response = formatSubjectString(response);
-
-                //File.AppendAllText(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml", namesArray.ToString());
-                
             }
             catch (Exception e)
             {
@@ -119,11 +146,9 @@ namespace LinqToWikiBot
             Boolean space;
             int commaIndex = 0;
 
-            
             for (int i = 0; i < 500 ; i++)
             {
-                /*
-                 * Want to remove commas because for geograpthy, the words after the commas define the states and country of the place
+                /* Want to remove commas because for geograpthy, the words after the commas define the states and country of the place
                  * which we do not care
                  **/ 
                 comma = namesArray[i].Contains(",");
@@ -160,16 +185,13 @@ namespace LinqToWikiBot
                 }
 
                 else
-                {
                     namesArray[i] = "";
-                }
-
+  
                 if (namesArray[i] != "")
                     list_subjects.Add(namesArray[i]);
             }
-            //File.AppendAllText(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml", namesArray.ToString());
-            //System.IO.File.WriteAllLines(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml", list_subjects.ToString());
-            //Console.WriteLine(sb);
+
+            list_subjects.Sort();
             Console.WriteLine("Done obtaining and processing subjects");
             Console.WriteLine("Number of subjects: " + list_subjects.Count);
 
