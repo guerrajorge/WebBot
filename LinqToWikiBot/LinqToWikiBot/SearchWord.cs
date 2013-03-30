@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LinqToWikipedia;
+using System.IO;
 
 namespace LinqToWikiBot
 {
@@ -14,71 +15,28 @@ namespace LinqToWikiBot
         static WikipediaContext datacontext = new WikipediaContext();
         static Dictionary<int, information_structure> dictionary = new Dictionary<int, information_structure>();
         static information_structure info_struc;
-        
-        
 
-        private static void Write_Console()
+
+
+        internal void Write_Console()
         {
+            StringBuilder sb = new StringBuilder();
+
             foreach (KeyValuePair<int, information_structure> value in dictionary)
             {
-                Console.WriteLine(value.Value.question + "?");
-                Console.WriteLine(value.Value.answer);
-                Console.WriteLine();
+                sb.AppendLine(value.Value.question + "?");
+                sb.AppendLine(value.Value.answer);
             }
+
+            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml"))
+            {
+                outfile.Write(sb.ToString());
+            }
+             
 
             Console.WriteLine();
             Console.WriteLine("Process Finished...");
             Console.ReadLine();
-        }
-
-        private static void Obtain_information()
-        {
-
-
-            /*
-             * Subjects
-             **/
-            String[] subject = new String[] { "Computer engineering", "Miami Heat", "Orlando Magic", 
-                "Venezuela", "Basketball", "Association football","Tennis", "Computer science", "Education", "Hacker" };
-            StringBuilder sb2 = new StringBuilder();
-
-
-            for (int i = 0; i < subject.Length; i++)
-            {
-
-                /*
-                 * creates object: opensearch, which uses:
-                 * subject = whatever it is being search in Wikipedia
-                 * take(1) = limits the search to one option (the first one and that is it!)
-                 * OpenSearch = the action in the wiki sandbox
-                 **/
-                var opensearch = (
-                from wikipedia in datacontext.OpenSearch
-                where wikipedia.Keyword == subject[i]
-                select wikipedia).Take(1);
-
-                info_struc.answer = subject[i];
-
-                foreach (WikipediaOpenSearchResult result in opensearch)
-                {
-                    /*
-                     * add the descriptions of the searched subject to the StringBuilder sb2 and replaces
-                     * the subject with ""(empty string") so the subject name is not shown in the question
-                     **/
-                    sb2.Append(result.Description).Replace(subject[i], "");
-                    /*
-                     * Make sure the string if formatted correctly and adds the interrogative pronous
-                     * where needed
-                     **/
-                    formatString(sb2);
-                    info_struc.question = sb2.ToString();
-                    //add the name and question to the dictionary list
-                    dictionary.Add(i, info_struc);
-                    //clears sb2 becuase if not then everytime we run dictionary.add ... whatever information is
-                    //in sb2 gets added to the second string, which we dont want DUH!
-                    sb2.Clear();
-                }
-            }
         }
 
         private static void formatString(StringBuilder sb2)
@@ -131,6 +89,49 @@ namespace LinqToWikiBot
 
         }
 
+        internal void obtain_information(System.Collections.ArrayList list_subjects)
+        {
+            StringBuilder sb2 = new StringBuilder();
+
+
+            for (int i = 0; i < list_subjects.Count; i++)
+            {
+
+                /*
+                 * creates object: opensearch, which uses:
+                 * subject = whatever it is being search in Wikipedia
+                 * take(1) = limits the search to one option (the first one and that is it!)
+                 * OpenSearch = the action in the wiki sandbox
+                 **/
+                var opensearch = (
+                from wikipedia in datacontext.OpenSearch
+                where wikipedia.Keyword == list_subjects[i].ToString()
+                select wikipedia).Take(1);
+
+                info_struc.answer = list_subjects[i].ToString();
+
+                foreach (WikipediaOpenSearchResult result in opensearch)
+                {
+                    Console.WriteLine(i + " Processing word: " + info_struc.answer.ToString());
+                    /*
+                     * add the descriptions of the searched subject to the StringBuilder sb2 and replaces
+                     * the subject with ""(empty string") so the subject name is not shown in the question
+                     **/
+                    sb2.Append(result.Description).Replace(list_subjects[i].ToString(), "");
+                    /*
+                     * Make sure the string if formatted correctly and adds the interrogative pronous
+                     * where needed
+                     **/
+                    formatString(sb2);
+                    info_struc.question = sb2.ToString();
+                    //add the name and question to the dictionary list
+                    dictionary.Add(i, info_struc);
+                    //clears sb2 becuase if not then everytime we run dictionary.add ... whatever information is
+                    //in sb2 gets added to the second string, which we dont want DUH!
+                    sb2.Clear();
+                }
+            }
+        }
     }
     
     /*
