@@ -15,7 +15,7 @@ using LinqToWiki.Generated;
 
 namespace LinqToWikiBot
 {
-    class Program
+    class Search_Subject_Title
     {
         static StringBuilder subject = new StringBuilder();
         static String response;
@@ -35,7 +35,7 @@ namespace LinqToWikiBot
             WebClient client = new WebClient();
             obtainsubjects(address, client);
 
-            SearchWord word_descrition = new SearchWord();
+            SearchWord_Description word_descrition = new SearchWord_Description();
 
             word_descrition.obtain_information(list_subjects);
             word_descrition.Write_Console();

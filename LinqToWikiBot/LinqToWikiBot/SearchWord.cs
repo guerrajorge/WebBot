@@ -10,7 +10,7 @@ namespace LinqToWikiBot
 {
     
 
-    class SearchWord
+    class SearchWord_Description
     {
         static WikipediaContext datacontext = new WikipediaContext();
         static Dictionary<int, information_structure> dictionary = new Dictionary<int, information_structure>();
