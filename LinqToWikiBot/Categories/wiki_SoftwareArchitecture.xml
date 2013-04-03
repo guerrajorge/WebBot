@@ -1,0 +1,579 @@
+What is a software GUI (graphical user interface) designed for display on a large television (or similar sized screen) with interaction using a regular television-style remote control?
+10-foot user interface    Category:Distributed computing architecture    Open architecture    Assessment Open Service Interface Definition
+
+What is a view model designed by Philippe Kruchten for "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views"?
+4+1 architectural view model    Bistro Framework    Model–view–presenter    Common layers in an information system logical architecture
+
+What is the ability to connect to various components or services through multiple protocols without code change or addition, via change to a standard configuration file?
+Abstraction of transport/protocol connectivity    Integrated data management    Model–view–presenter    Open Service Interface Definitions
+
+What is a model based systems engineering software platform used for a range of activities including building and operating real-time simulation-based lab test facilities for hardware-in-the-loop simulation purposes?
+ADvantage Framework    Connascence (computer programming)    Service-oriented distributed applications    Implicit invocation
+
+What is a framework for modeling computer or communication systems architecture?
+AGATE (architecture framework)    Digital nervous system    Transport/protocol abstraction    Assessment Open Service Interface Definition
+
+What is a blueprint for software agents and intelligent control systems, depicting the arrangement of components?
+Agent architecture    Dependency injection    Composition over inheritance    GNUstepWeb
+
+What is an O.K.I. specification which supports the creation, retrieval and deletion of Agent and Groups?
+Agent Open Service Interface Definition    Connascence (computer programming)    Task computing    Blackboard system
+
+Whatware architecture construct that describes a communication mechanism between an AJAX application running in a web browser to a web application server?
+AJAX Service Bus    Architecture framework    Repository Open Service Interface Definition    ADvantage Framework
+
+What is the use of a software domain model where the business logic is implemented outside the domain objects?
+Anemic domain model    Abstraction of transport/protocol connectivity    Representational state transfer    Model 2
+
+Whatware engineering, an anti-pattern (or antipattern) is a pattern used in social or business operations or software engineering that may be commonly used but is ineffective and/or counterproductive in practice?
+Anti-pattern    UIMA    EMML (Motorola)    Integrated data management
+
+What is a mechanism (similar to a process in an operating system) used within the Common Language Infrastructure (CLI) to isolate executed software applications from one another so that they do not affect each other?
+Application domain    Architectural pattern    Connection broker    Transparency (human–computer interaction)
+
+WhatThe term "" was first used by [http://www.ibm.com/contact/employees/us/ Andrew Kupetz], Chief Technology Officer, IBM Financial Services Sector, to describe the real-time mediation of the data flow between an end user and/or one or more applications?
+Application Mediation    ARID    Common modeling infrastructure    AGATE (architecture framework)
+
+Whatware framework that provides a generalized approach to creating an application-server implementation, without regard to what the application functions are, or the server portion of a specific implementation instance?
+Application server    Category:Interoperability    Common Component Architecture    Platform-specific model
+
+What is an emerging discipline within IT that involves a top down approach to monitoring, controlling, securing, and optimizing applications in transit?
+Application service architecture    Functional design    Software architecture    Grading Open Service Interface Definition
+
+What is a standard design in the field of software architecture. The concept of an architectural pattern has a broader scope than the concept of design pattern?
+Architectural pattern    Office controller    Business logic layer    Shared nothing architecture
+
+What is an architecture description language standardized by SAE?
+Architecture Analysis & Design Language    Resource-oriented computing    Mibe architecture    Category:Persistence
+
+What are the system engineering community, the software engineering community and the enterprise modelling and engineering communi?
+Architecture description language    Search-oriented architecture    Library Oriented Architecture    Service-oriented distributed applications
+
+WhatThe ISO/IEC/IEEE 42010 Conceptual Model of Architecture Description defines the term architecture framework a?
+Architecture framework    Architecture-centric design method    Monolithic application    Category:Persistence
+
+Whatware engineering, architecture tradeoff analysis method (ATAM) is a risk-mitigation process used early in the software development life cycle?
+Architecture tradeoff analysis method    Common layers in an information system logical architecture    Architecture tradeoff analysis method    Subsumption architecture
+
+What is a novel method for software architectural design from Anthony J?
+Architecture-centric design method    Architecture-centric design method    Authentication Open Service Interface Definition    Smart client
+
+What is the name of the initiative of the Object Management Group (see [http://adm.omg.org/ OMG ADM Task Force website]) related to building and promoting standards that can be applied to modernize legacy systems?
+Architecture-driven modernization    Presentation–abstraction–control    Logging Open Service Interface Definition    Client–queue–client
+
+What is arid when it is characterized by a severe lack of available water, to the extent of hindering or preventing the growth and development of plant and animal life?
+ARID    Category:Architecture description language    Category:Enterprise architecture    Messaging Open Service Interface Definition
+
+What is making individual software components, such as speech synthesizers, interoperable with other components, such as common sense knowledgebases, in order to create larger, broader and more capable A.I?
+Artificial intelligence systems integration    Logging Open Service Interface Definition    Colony Framework    QP (framework)
+
+What is an O.K.I. specification which supports creating, organizing, administrating, evaluating, storing and retrieving assessment information?
+Assessment Open Service Interface Definition    Architecture tradeoff analysis method    Assessment Open Service Interface Definition    Agent architecture
+
+What is an O.K.I. specification which supports invoking an authentication process?
+Authentication Open Service Interface Definition    Rich Internet application    Software architectural model    Architecture description language
+
+What is an O.K.I. specification which provides the means to define who is authorized to do what, when?
+Authorization Open Service Interface Definition    Quality-driven architecture design    IDEAS Group    Model View ViewModel
+
+What is an open and standardized automotive software architecture, jointly developed by automobile manufacturers, suppliers and tool developers?
+AUTOSAR    Category:Persistence    Connascence (computer programming)    Category:Enterprise application integration
+
+What is a compositional .NET MVC framework with concepts from REST and AOP. Bistro modifies the traditional concepts of MVC by breaking down a single HTTP request into a series of aspects, each processed by a separate controller?
+Bistro Framework    EAST-ADL    Category:Distributed computing architecture    Software architectural model
+
+What is an artificial intelligence application based on the blackboard architectural model, where a common knowledge base, the "blackboard", is iteratively updated by a diverse group of specialist knowledge sources, starting with a problem specification and ending with a solution?
+Blackboard system    Pipe and filter architecture    Web API    Principle of good enough
+
+What is an approach to developing ontological or semantic models for large complex operational applications that consists of a top ontology and a process for constructing the ontology?
+BORO method    Rich Internet application    Software architecture analysis method    BORO method
+
+What is the set of classes that represent objects in the business model being implemented?
+Business domain    ARID    Architecture-centric design method    Architecture-driven modernization
+
+What is a non-technical term generally used to describe the functional algorithms that handle information exchange between a database and a user interface?
+Business logic    Simulated reality    Reference architecture    EFx Factory
+
+What is a typical software engineering artifact within a Multitier architecture?
+Business logic layer    Client–queue–client    IEEE 1471    Web application
+
+What?
+Category:Architecture description language    CPPSERV    Common Component Architecture    Dependency injection
+
+What?
+Category:Component-based software engineering    Internet-Speed Development    Presentation–abstraction–control    Extensibility
+
+Whatnisational, and engineering aspects of distributed computing. Computer architectures, software architectures, software frameworks, and network architectures related to distributed computing and distributed systems?
+Category:Distributed computing architecture    Scheduling Open Service Interface Definition    EAST-ADL    Reference architecture
+
+What?
+Category:Enterprise application integration    Artificial intelligence systems integration    Mashup (web application hybrid)    OOHDM
+
+Whatrise architecture is a comprehensive framework used to manage and align an organization's Information Technology (IT) assets, people, operations, and projects with its operational characteristics?
+Category:Enterprise architecture    EFx Factory    Software framework    Software architecture
+
+What?
+Category:Interoperability    OpenPipeline    Domain-driven design    Desktop metaphor
+
+What?
+Category:Persistence    EMML (Motorola)    Logging Open Service Interface Definition    Cohesion (computer science)
+
+What?
+Category:Software analysis patterns    Simulated reality    Runahead solution    EMML (Motorola)
+
+Whatware architecture, also known as passive queue architecture, consists of two or more clients (where all clients can have either the same software, or different software understanding some common protocol), and one or more servers, which acts as the passive queue?
+Client–queue–client    MODELISAR    Workflow Open Service Interface Definition    AGATE (architecture framework)
+
+WhatIn computer programming, cohesion refers to the degree to which the elements of a module belong together?
+Cohesion (computer science)    Sun Web Developer Pack    Sun Web Developer Pack    Authorization Open Service Interface Definition
+
+What is an open source plugin framework specification. Implementations of the specification offer a runtime component model, that allows for plugins to be installed, started, stopped, updated and uninstalled without requiring the application container to be stopped?
+Colony Framework    Representational state transfer    Knowledge Discovery Metamodel    XRX (web application architecture)
+
+What is a means of interaction with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines)?
+Command-line interface    Monolithic system    Subsumption architecture    Agent Open Service Interface Definition
+
+What is a standard for Component-based software engineering used in high-performance (also known as scientific) computing?
+Common Component Architecture    Software architecture description    Software architecture    Knowledge Discovery Metamodel
+
+What are the most common layers in a logical multilayered architecture for an information system with an object-oriented desig?
+Common layers in an information system logical architecture    Integrated data management    Software blueprint    Naked objects
+
+Whatware libraries that can be shared across multiple institutions in order to increase software reuse and interoperability in complex modeling systems?
+Common modeling infrastructure    Web application    Office controller    Droplets (programming environment)
+
+What is a branch of software engineering that emphasizes the separation of concerns in respect of the wide-ranging functionality available throughout a given software system?
+Component-based software engineering    Logging Open Service Interface Definition    Rich Internet application    Category:Persistence
+
+What is an addition to Microsoft's .NET Framework for creating complex user interfaces made of loosely coupled components?
+Composite UI Application Block    Common modeling infrastructure    Category:Component-based software engineering    Fault-tolerant messaging
+
+What is a technique by which classes may achieve polymorphic behavior and code reuse by containing other classes that implement the desired functionality instead of through inheritance?
+Composition over inheritance    Agent architecture    Software architectural model    Technical debt
+
+Whatware engineering, two components are connascent if a change in one wou?
+Connascence (computer programming)    Rich Internet application    IDEAS Group    Integrated data management
+
+Whatware engineering, a connection broker is a resource manager that manages a pool of connections to connection-based resources such as databases or remote desktops, enabling rapid reuse of these connections by short-lived processes without the overhead of setting up a new connection each time?
+Connection broker    Transport/protocol abstraction    Synchrony abstraction    Principle of good enough
+
+Whatware engineering, coupling or dependency is the degree to which each program module relies on each one of the other modules?
+Coupling (computer programming)    EMML (Motorola)    Software architectural model    Grading Open Service Interface Definition
+
+What is an O.K.I. specification which supports the creation and management of a course catalog (CourseCatalog)?
+CourseManagement Open Service Interface Definition    Multimodal Architecture and Interfaces    Extensibility    Agent architecture
+
+What is C++ Servlet Engine. It provides Servlet-like API to C++ programmers. This allows them to write small, extremely efficient web applications, with an ease that was only available to Java programmers?
+CPPSERV    Open architecture    Scheduling Open Service Interface Definition    Web container
+
+What is an Architecture Description Language (ADL). It can be used in a software engineering context to describe the organization of a piece of software in terms of components, their interfaces, and the bindings between components?
+Darwin (ADL)    Simple.com    Search-oriented architecture    Integrated data management
+
+What is a paradigm used in computer software to program systems of communicating objects?
+Data, context and interaction    Simple.com    Software Architecture styles and patterns    Naked objects
+
+Whatdistinct meanings, generally relating to software architectures in which databases play a crucial role?
+Database-centric architecture    Multitier architecture    Software architect    Assessment Open Service Interface Definition
+
+Whatware system?
+Debugging patterns    Abstraction of transport/protocol connectivity    Application domain    Common Component Architecture
+
+What is the result of breaking a monolithic application into small manageable pieces the deliver the same or superior business results?
+Demonolithicized application    Shared nothing architecture    Platform-specific model    Resource-oriented architecture
+
+What is a software design pattern that allows removing hard-coded dependencies and making it possible to change them, whether at run-time or compile-time?
+Dependency injection    Resource-oriented computing    PureMVC    OOHDM
+
+What is an interface metaphor which is a set of unifying concepts used by graphical user interfaces to help users more easily interact with the computer?
+Desktop metaphor    Anemic domain model    Simple.com    IEEE 1471
+
+What is an O.K.I. specification which supports creating and populating dictionaries of tag-value pairs?
+Dictionary Open Service Interface Definition    Model View ViewModel    Staged event-driven architecture    Systems architecture
+
+What is a phrase, popularly associated with Bill Gates of Microsoft, used to describe a vision for how the IT infrastructure of an enterprise could be analogous to the autonomic nervous system of a biological organism?
+Digital nervous system    Service-oriented development of applications    ARID    Agent Open Service Interface Definition
+
+What is an approach to develop software for complex needs by connecting the implementation to an evolving model?
+Domain-driven design    Category:Enterprise application integration    Fault-tolerant messaging    Component-based software engineering
+
+What is a programming environment for creating network-based computing application?
+Droplets (programming environment)    Demonolithicized application    Software architecture    Web application
+
+What is an Architecture Description Language (ADL) for automotive embedded systems, developed in several European research projects?
+EAST-ADL    Colony Framework    Functional software architecture    Federated Portal Network
+
+Whatware Factory]) is a pioneering Architectural Guidance Software Factory from Microsoft, and one of the first implementations of a software factory to be built?
+EFx Factory    Subsumption architecture    Category:Persistence    Web application
+
+Whatrise Mobility Mark-up Language) is an extension of the HTML language. It is less of a strict set of functions and tags, but more a standard for providing developers of web-based mobility applications a means to configure, control and retrieve information from additional input devices and features of rugged mobile computers?
+EMML (Motorola)    Digital nervous system    BORO method    Multitenancy
+
+What is an XML markup language for creating enterprise mashups, which are software applications that consume and mash data from variety of sources, often performing logical or mathematical operations as well as presenting data?
+Enterprise Mashup Markup Language    EFx Factory    Task computing    Software architecture analysis method
+
+What is a software architecture pattern promoting the production, detection, consumption of, and reaction to events?
+Event-driven architecture    IFIP Working Group 2.10    Model 1    Category:Component-based software engineering
+
+What is a distributed object system that is constructed on top of publish/subscribe event systems. This design decision implies modeling method calls as events and subscriptions over the underlying messaging middleware?
+Evocb    Presenter First    Software analysis pattern    Platform-specific model
+
+Whatware engineering, extensibility (not to be confused with forward compatibility) is a system design principle where the implementation takes into consideration future growth?
+Extensibility    Fault-tolerant messaging    Multitenancy    Task computing
+
+What is the ability to transparently “failove?
+Fault-tolerant messaging    Magisto    Connascence (computer programming)    Software architecture analysis method
+
+Whattisfy requirements despite failure?
+Fault-tolerant software    Metatable    AGATE (architecture framework)    Scaffold (programming)
+
+What is a framework for remote content sharing between enterprise portal?
+Federated Portal Network    Monolithic system    Functional software architecture    Implicit invocation
+
+What is an O.K.I. specificatio?
+Filing Open Service Interface Definition    Software architecture analysis method    Public interface    Category:Enterprise architecture
+
+Whatlish, are generalised terms that refer to the initial and the final stages of a process?
+Front and back ends    Composite UI Application Block    Multimodal Architecture and Interfaces    Composite UI Application Block
+
+What is a paradigm used to simplify the design of hardware and software devices such as computer software and increasingly, 3D models?
+Functional design    Domain-driven design    Simple.com    Knowledge Discovery Metamodel
+
+Whatware architecture (FSA) is an architectural model that identifies enterprise functions, interactions and corresponding IT needs?
+Functional software architecture    Pipe and filter architecture    QP (framework)    Platform-specific model
+
+What is a proprietary application framework that was first available for Smalltalk as an object database?
+Gemstone (database)    Software architecture    Category:Persistence    UIMA
+
+What is a development environment and an application server for Web Applications. It is characterized by strict separation of data storage, processing and user interface development?
+GNUstepWeb    Application server    Digital nervous system    Model–view–adapter
+
+What is an Open Knowledge Initiative specification. OSIDs are programmatic interfaces which comprise a Service Oriented Architecture for designing and building reusable and interoperable software?
+Grading Open Service Interface Definition    Software architect    Inversion of control    Metatable
+
+What is a type of user interface that allows users to interact with electronic devices using images rather than text commands?
+Graphical user interface    Monolithic application    Synchrony abstraction    Composition over inheritance
+
+What is an Open Knowledge Initiative specification. OSIDs are programmatic interfaces which comprise a Service Oriented Architecture for designing and building reusable and interoperable software?
+Hierarchy Open Service Interface Definition    Agent architecture    PureMVC    Blackboard system
+
+What is IBM's, high-performance data access platform focused on simplifying, developing, securing, managing, and optimizing new and existing applications that access data?
+IBM PureQuery    Mashup (web application hybrid)    Evocb    Category:Component-based software engineering
+
+What is the International Defence Enterprise Architecture Specification for exchange Group?
+IDEAS Group    Category:Persistence    Rich client platform    Resource-oriented architecture
+
+What is an IEEE Standard  for describing the architecture of a software-intensive system, also known as software architecture?
+IEEE 1471    Authorization Open Service Interface Definition    Interface metaphor    Common modeling infrastructure
+
+Whatware Architecture is a working group of the International Federation for Information Processing (IFIP)?
+IFIP Working Group 2.10    Platform-specific model    Category:Persistence    Technical debt
+
+What is a term used by some authors for a style of software architecture in which a system is structured around event handling, using a form of callback?
+Implicit invocation    Synchrony abstraction    EFx Factory    ADvantage Framework
+
+What is a tools approach to facilitate data management and improve performance?
+Integrated data management    Category:Component-based software engineering    Reference architecture    Software blueprint
+
+What is a software development firm that was created in 2002. The company is a systems integrator and solutions provider for knowledge management, automation and plant process management and decision support applications?
+Integration Objects    Connection broker    OpenPipeline    Application Mediation
+
+What is a set of user interface visuals, actions and procedures that exploit specific knowledge that users already have of other domains?
+Interface metaphor    Space-based architecture    Implicit invocation    Presentation–abstraction–control
+
+What is an Agile Software Development development method using a combined spiral model/waterfall model with daily builds aimed at developing a product with high speed?
+Internet-Speed Development    Category:Persistence    Repository Open Service Interface Definition    Sun Web Developer Pack
+
+Whatware engineering, inversion of control (IoC) is a programming technique, expressed here in terms of object-oriented programming, in which object coupling is bound at run time by an assembler object and is typically not known at compile time using static analysis?
+Inversion of control    Synthetic Environment for Analysis and Simulations    Darwin (ADL)    Scheduling Open Service Interface Definition
+
+What is publicly available specification from the Object Management Group (OMG)?
+Knowledge Discovery Metamodel    Synthetic Environment for Analysis and Simulations    Command-line interface    Software Architecture styles and patterns
+
+Whatware engineering, a  (LOA) is a set of principles and methodologies for designing and developing software in the form of reusable software libraries constrained in a specific ontology domain?
+Library Oriented Architecture    Architecture-driven modernization    Shared disk architecture    IDEAS Group
+
+What is an O.K.I. specification which supports a means of reading and writing log files?
+Logging Open Service Interface Definition    Desktop metaphor    IEEE 1471    Transport/protocol abstraction
+
+What is a term for application software that runs only on a particular type of computer. Conversely, applications that run on a variety of different types of computers are called machine-independent, or cross-platform?
+Machine-dependent software    Target–action    Repository Open Service Interface Definition    Reference architecture
+
+What is a web application and mobile app that provides a free automatic video editing service for amateurs?
+Magisto    Reference architecture    Fault-tolerant software    Authentication Open Service Interface Definition
+
+What is a web page, or web application, that uses and combines data, presentation or functionality from two or more sources to create new services?
+Mashup (web application hybrid)    MVC4WPF    Synthetic Environment for Analysis and Simulations    Bistro Framework
+
+What is an O.K.I. specification which provides a means of sending, subscribing and receiving messages?
+Messaging Open Service Interface Definition    Machine-dependent software    Filing Open Service Interface Definition    Category:Persistence
+
+What is the section of a database or other data holding structure that is designated to hold data that will act as source code or metadata?
+Metatable    Evocb    Runahead solution    Anti-pattern
+
+What is a behavior-based robot architecture developed at [http://www.airlab.elet.polimi.it/ Artificial Intelligence and Robotics Lab] of Politecnico di Milano by Fabio La Daga and [http://home.dei.polimi.it/bonarini/index.html Andrea Bonarini] in 1998. MIBE architecture is based on the idea of animat and derived from subsumption architecture, formerly developed by Rodney Brooks and colleagues at MIT in 198?
+Mibe architecture    Architecture framework    Node graph architecture    Space-based architecture
+
+What are two commonly used design models, referred to as  and Model ?
+Model 1    Internet-Speed Development    10-foot user interface    AGATE (architecture framework)
+
+What is a complex design pattern used in the design of Java Web applications which separates the display of content from the logic used to obtain and manipulate the content?
+Model 2    Shared nothing architecture    Category:Interoperability    Category:Enterprise application integration
+
+What is an architectural pattern used in software engineering that originated from Microsoft as a specialization of the presentation model design pattern introduced by Martin Fowler?
+Model View ViewModel    Integrated data management    Rich client platform    Web application
+
+What is an ITEA 2 (Information Technology for European Advancement) European project aiming to improve the design of systems and of embedded software in vehicles?
+MODELISAR    Application service architecture    Shared nothing architecture    Mibe architecture
+
+What is an architectural pattern and multitier architecture, used in software engineering?
+Model–view–adapter    Model–view–adapter    Software architect    Connascence (computer programming)
+
+What is a derivative of the model–view–controller (MVC) software pattern, also used mostly for building user interfaces?
+Model–view–presenter    Synchrony abstraction    Digital nervous system    Synthetic Environment for Analysis and Simulations
+
+Whatware engineering, a monolithic application describes a single-tiered software application in which the user interface and data access code are combined into a single program from a single platform?
+Monolithic application    Domain-driven design    Category:Component-based software engineering    Architecture Analysis & Design Language
+
+Whatware and hardwar?
+Monolithic system    MODELISAR    Multilayered architecture    Service-oriented development of applications
+
+Whatware architecture is a software architecture that uses many layers for allocating the responsibilities?
+Multilayered architecture    Search-oriented architecture    Functional design    Software framework
+
+Whatis an open standard developed by the World Wide Web Consortium since 2005. It was published as a Recommendation of the W3C on October 25, 2012. The document is a technical report specifying a multimodal system architecture and its generic interfaces to facilitate integration and multimodal interaction management in a computer  system?
+Multimodal Architecture and Interfaces    Model–view–presenter    Model 2    Implicit invocation
+
+Whatware architecture where a single instance of the software runs on a server, serving multiple client organizations (tenants)?
+Multitenancy    Situational application    ADvantage Framework    Category:Distributed computing architecture
+
+Whatware engineering, multi-tier architecture (often referred to as n-tier architecture) is a client–server architecture in which presentation, application processing, and data management functions are logically separated?
+Multitier architecture    Model 1    Simulated reality    IEEE 1471
+
+What is an architectural pattern used in software engineering that came about as an enhancement to the MVVM design pattern?
+Multiuse Model View    Target–action    Assessment Open Service Interface Definition    Mashup (web application hybrid)
+
+What is an open-source, extensible, automated code pattern developed at Information Control Corporation for Windows Presentation Foundation (WPF) development based on the Model-View-Controller (MVC) and Presentation-Abstraction-Control (PAC) patterns?
+MVC4WPF    Messaging Open Service Interface Definition    Component-based software engineering    Open architecture
+
+What is an architectural pattern used in software engineerin?
+Naked objects    Blackboard system    Model 1    ARID
+
+What is a type of software design which builds around modular node components which can be connected to form a graph?
+Node graph architecture    Multitenancy    Technical debt    Model 1
+
+What is a term used in computing for an architecture or framework which permits running some aspects of a web application when not connected to the Internet?
+Occasionally connected computing    Systems architecture    IDEAS Group    GNUstepWeb
+
+Whatsis of families of products in which the PBX would supply data connectivity and applications along with its traditional voice services?
+Office controller    Assessment Open Service Interface Definition    Rich client platform    Hierarchy Open Service Interface Definition
+
+What is a method for the development of Web application?
+OOHDM    Simple.com    Synthetic Environment for Analysis and Simulations    Functional design
+
+What is a type of computer architecture or software architecture that is designed to make adding, upgrading and swapping components easy?
+Open architecture    Colony Framework    AJAX Service Bus    Semantic architecture
+
+What are programmatic interface specifications describing services?
+Open Service Interface Definitions    Data, context and interaction    Solution architecture    Category:Enterprise architecture
+
+What is open source software for crawling, parsing, analyzing and routing documents. It is intended to tie together otherwise incomplete solutions for enterprise search and document processing?
+OpenPipeline    Library Oriented Architecture    Common Component Architecture    Service-oriented development of applications
+
+What is the ability to send a payload (the document or request object sent to a Service) without regard to what protocol might be configured?
+Payload abstraction    EFx Factory    AGATE (architecture framework)    AGATE (architecture framework)
+
+Whatware engineering, a pipeline consists of a chain of processing elements (processes, threads, coroutines, etc..), arranged so that the output of each element is the input of the next?
+Pipe and filter architecture    Service-oriented distributed applications    Web container    Category:Software analysis patterns
+
+Whatware engineering is a model of a software system or business system, that is independent of the specific technological platform used to implement it?
+Platform-independent model    Filing Open Service Interface Definition    Service-oriented distributed applications    Synthetic Environment for Analysis and Simulations
+
+What is a model of a software or business system that is linked to a specific technological platform (e.g?
+Platform-specific model    Graphical user interface    Functional design    AJAX Service Bus
+
+Whatware development, presentation logic is concerned with how business objects are displayed to users of the software, e.g?
+Presentation logic    Presentation–abstraction–control    Category:Component-based software engineering    IFIP Working Group 2.10
+
+What is a software architectural pattern. It is an interaction-oriented software architecture, and is somewhat similar to model–view–controller (MVC) in that it separates an interactive system into three types of components responsible for specific aspects of the application's functionality?
+Presentation–abstraction–control    EAST-ADL    Office controller    Architecture-centric design method
+
+What is a software development approach that combines the ideas of the model–view–presenter (MVP) design pattern, test-driven development, and Feature-driven development?
+Presenter First    Anemic domain model    QP (framework)    Connascence (computer programming)
+
+What is a rule for software and systems design?
+Principle of good enough    Resource-oriented computing    Quality-driven architecture design    Space-based architecture
+
+What is the logical point at which independent software entities interact. The entities may interact with each other within a single computer, across a network, or across a variety of other topologies?
+Public interface    Anemic domain model    Quality-driven architecture design    Architecture description language
+
+What is a framework for creating applications based upon the well-established Model-View-Controller design pattern?
+PureMVC    Resource-oriented computing    Common Component Architecture    EAST-ADL
+
+What is a family of lightweight, open source software frameworks for building responsive and modular real-time embedded applications as systems of cooperating, event-driven active objects (actors)?
+QP (framework)    IBM PureQuery    OOHDM    Demonolithicized application
+
+What is an approach to software architecture design which emphasizes the importance of addressing quality attributes, i.e?
+Quality-driven architecture design    Demonolithicized application    Common modeling infrastructure    Synchrony abstraction
+
+Whatware architecture or enterprise architecture provides a template solution for an architecture for a particular domain?
+Reference architecture    Magisto    Authentication Open Service Interface Definition    Implicit invocation
+
+What is an O.K.I. specification which defines the storing and retrieving of digital content, referred to as Assets?
+Repository Open Service Interface Definition    Client–queue–client    Quality-driven architecture design    Task computing
+
+What is a style of software architecture for distributed systems such as the World Wide Web?
+Representational state transfer    Machine-dependent software    Fault-tolerant software    Magisto
+
+Whatware engineering, a resource-oriented architecture (ROA) is a style of software architecture and programming paradigm for designing and developing software in the form of resources with "RESTful" interfaces?
+Resource-oriented architecture    Evocb    Metatable    Software architecture
+
+What is a simple abstract computing model used for describing, designing, and implementing software and software systems?
+Resource-oriented computing    Dependency injection    Technical debt    Connascence (computer programming)
+
+What is a programmer tool that makes it easier to integrate independent software components, where most of the data processing occurs on the client side?
+Rich client platform    Architecture tradeoff analysis method    IFIP Working Group 2.10    Magisto
+
+What is a Web application that has many of the characteristics of desktop application software, typically delivered by way of a site-specific browser, a browser plug-in, an independent sandbox, extensive use of JavaScript, or a virtual machine?
+Rich Internet application    Messaging Open Service Interface Definition    MVC4WPF    Database-centric architecture
+
+Whatware development a runahead solution is employed to investigate the capabilities of new products and the compatibility of technologies?
+Runahead solution    Assessment Open Service Interface Definition    SAP Enterprise Architecture Framework    Connascence (computer programming)
+
+What is a methodology and toolset primarily to support the effective adoption of SOA?
+SAP Enterprise Architecture Framework    Authentication Open Service Interface Definition    Payload abstraction    Model–view–presenter
+
+What is a technique supported by some model-view-controller frameworks, in which the programmer may write a specification that describes how the application database may be used?
+Scaffold (programming)    Monolithic application    Workflow Open Service Interface Definition    Scaffold (programming)
+
+What is an O.K.I. specification. OSIDs are programmatic interfaces which comprise a Service Oriented Architecture for designing and building reusable and interoperable software?
+Scheduling Open Service Interface Definition    Repository Open Service Interface Definition    Evocb    Systems architecture
+
+What is the main integration component in an information system. In a traditional business environment the architectural layer usually occupied by a relational database management system (RDBMS) is supplemented or replaced with a search engine or the indexing technology used to build search engines?
+Search-oriented architecture    Mibe architecture    Simple.com    Library Oriented Architecture
+
+What is a novel concept in software architecture which envisions enabling the architecture community to unambiguously capture, catalog, communicate, preserve, and interoperably exchange semantics of their architectures, thus making architecture descriptions true assets?
+Semantic architecture    Occasionally connected computing    Simulated reality    XRX (web application architecture)
+
+What is an architecture that allows for scalable and controlled Enterprise Application Integration solutions?
+Semantic service-oriented architecture    Desktop metaphor    Colony Framework    Dictionary Open Service Interface Definition
+
+What are based on the notion of software services, which are high-level software components that include web services?
+Service-oriented architecture implementation framework    Extensibility    Platform-independent model    Category:Distributed computing architecture
+
+Whatware application development, service-oriented development of applications (or SOD?
+Service-oriented development of applications    Colony Framework    Gemstone (database)    CPPSERV
+
+WhatA RESTful programming architecture that allows some services to be run on the client and some on the server?
+Service-oriented distributed applications    Architecture description language    EFx Factory    Category:Component-based software engineering
+
+Whathared disk architecture (SD) is a distributed computing architecture in which all disks are accessible from all cluster nodes?
+Shared disk architecture    Service-oriented architecture implementation framework    Semantic architecture    Office controller
+
+Whathared nothing architecture (SN) is a distributed computing architecture in which each node is independent and self-sufficient, and there is no single point of contention across the system?
+Shared nothing architecture    Node graph architecture    Filing Open Service Interface Definition    Enterprise Mashup Markup Language
+
+Whatware Engineering" (SIG-MDSE) organizes the MDSE as an academic conference?
+SIGMDSE    Category:Interoperability    Architecture description language    Application Mediation
+
+What is a protocol for applications to interface with HTTP servers, as an alternative to the CGI protocol?
+Simple.com    Event-driven architecture    Systems architecture    Front and back ends
+
+What is the hypothesis that reality could be simulated—perhaps by computer simulation—to a degree indistinguishable from "true" reality, and may in fact be such a simulation?
+Simulated reality    Rich client platform    Open Service Interface Definitions    Business domain
+
+What is "good enough" software created for a narrow group of users with a unique set of needs?
+Situational application    Synchrony abstraction    Search-oriented architecture    Assessment Open Service Interface Definition
+
+What is a term describing an application environment whic?
+Smart client    Runahead solution    IFIP Working Group 2.10    Occasionally connected computing
+
+Whatsis patterns in software engineering are conceptual models, which capture an abstraction of a situation that can often be encountered in modelling?
+Software analysis pattern    Mashup (web application hybrid)    Category:Persistence    Fault-tolerant messaging
+
+What is a computer programmer who makes high-level design choices and dictates technical standards, including software coding standards, tools, and platforms?
+Software architect    Web API    Resource-oriented architecture    Architecture tradeoff analysis method
+
+Whatware) is a rich and rigorous diagram, created using available standards, in which the primary concern is to illustrate a specific set of tradeoffs inherent in the structure and design of a system or ecosystem?
+Software architectural model    Architecture description language    Space-based architecture    Common Component Architecture
+
+Whatware architecture intuitively denotes the high level structures of a software system. It can be defined as the set of structures needed to understand the software system, defining the software elements, the relations between them, and the properties of both elements and relations?
+Software architecture    CourseManagement Open Service Interface Definition    Inversion of control    Occasionally connected computing
+
+What is a method used in software architecture to evaluate a system architecture?
+Software architecture analysis method    Multilayered architecture    Synthetic Environment for Analysis and Simulations    Multimodal Architecture and Interfaces
+
+What refers to eith?
+Software architecture description    Database-centric architecture    Subsumption architecture    Gemstone (database)
+
+What is a set of methods for the extraction of architectural information from lower level representations of a software system, such as source code?
+Software architecture recovery    Bistro Framework    GNUstepWeb    Resource-oriented computing
+
+What is a general, reusable solution to a commonly occurring problem in software architecture within a given context?
+Software Architecture styles and patterns    Systems architecture    Transparency (human–computer interaction)    Darwin (ADL)
+
+Whatware blueprint is the final product of a software blueprinting process.  Its name derives from the analogy drawn with the popular use of the term blueprint (within traditional construction industry)?
+Software blueprint    Synchrony abstraction    Office controller    AGATE (architecture framework)
+
+Whatware framework is an abstraction in which software providing generic functionality can be selectively changed by additional user written code, thus providing application specific software?
+Software framework    AGATE (architecture framework)    Data, context and interaction    OOHDM
+
+Whatrise architecture) is a architecture domain that aims to address specific problems and requirements, usually through the design of specific information systems or applications?
+Solution architecture    Business logic    Desktop metaphor    Software framework
+
+What is a software architecture pattern for achieving linear scalability of stateful, high-performance applications using the tuple space paradigm?
+Space-based architecture    Model 2    Connection broker    Monolithic application
+
+Whatware architecture that decomposes a complex, event-driven application into a set of stages connected by queues?
+Staged event-driven architecture    Common modeling infrastructure    Open Service Interface Definitions    Pipe and filter architecture
+
+What is a reactive robot architecture heavily associated with behavior-based robotics?
+Subsumption architecture    Connascence (computer programming)    Artificial intelligence systems integration    Category:Distributed computing architecture
+
+What is a collection of open source software released by Sun Microsystems for developing web applications that run on Java EE application servers?
+Sun Web Developer Pack    SIGMDSE    Architecture description language    Graphical user interface
+
+What is the proposed ability to generically call a Service/Operati?
+Synchrony abstraction    Scheduling Open Service Interface Definition    Business logic    Quality-driven architecture design
+
+What is currently being used by Homeland Security and the US Defense Department to simulate crises on the US mainland?
+Synthetic Environment for Analysis and Simulations    Model–view–adapter    Node graph architecture    Software architecture
+
+What is the conceptual model that defines the structure, behavior, and more views of a system?
+Systems architecture    Public interface    Naked objects    Agent Open Service Interface Definition
+
+Whatware architecture, where a computer program is divided up into objects which dynamically establish relationships by telling each other which object they should target and what action or message to send to that target when an event occurs?
+Target–action    Software blueprint    Multilayered architecture    Component-based software engineering
+
+What is a computatiοn to fill the gap between tasks (what user wants to be done), and services (functionalities that are available to the user)?
+Task computing    Architecture framework    Anti-pattern    Architecture-driven modernization
+
+What is a neologistic metaphor referring to the eventual consequences of poor or evolving software architecture and software development within a codebase?
+Technical debt    Architectural pattern    Application server    Multiuse Model View
+
+What is transparent if the system after change adheres to previous  external interface as much as possible while changing its internal behaviour?
+Transparency (human–computer interaction)    Multitenancy    Assessment Open Service Interface Definition    Category:Architecture description language
+
+What is the ability to change service transport protocol implementatio?
+Transport/protocol abstraction    Representational state transfer    AJAX Service Bus    Payload abstraction
+
+What is to date the only industry standard for content analytics?
+UIMA    Abstraction of transport/protocol connectivity    Application domain    Connascence (computer programming)
+
+What is typically a defined set of HTTP request messages along with a definition of the structure of response messages, typically expressed in JSON or XML?
+Web API    Rich Internet application    Software architecture description    Demonolithicized application
+
+What is an application that is accessed by users over a network such as the Internet or an intranet?
+Web application    Model View ViewModel    ARID    Software architecture analysis method
+
+What is the component of a web server that interacts with Java servlets?
+Web container    Software architect    Blackboard system    Implicit invocation
+
+What is an O.K.I. specification which provides the means to define a Process composed of Steps?
+Workflow Open Service Interface Definition    Database-centric architecture    IEEE 1471    Platform-independent model
+
+Whatware architecture, Wright is an architecture description language developed at Carnegie Mellon University?
+Wright (ADL)    Scheduling Open Service Interface Definition    IFIP Working Group 2.10    PureMVC
+
+Whatware development XRX is a web application architecture based on XForms, REST and XQuery.  XRX applications store data on both the web client and on the web server in XML format and do not require a translation between data formats?
+XRX (web application architecture)    Software architecture    Pipe and filter architecture    Presentation logic
+

@@ -32,7 +32,7 @@ namespace LinqToWikiBot
                 sb.AppendLine();
             }
 
-            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\wiki.xml"))
+            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\Categories\wiki.xml"))
             {
                 outfile.Write(sb.ToString());
             }
