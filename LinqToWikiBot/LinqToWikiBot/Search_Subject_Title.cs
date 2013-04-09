@@ -22,7 +22,17 @@ namespace LinqToWikiBot
         static String response;
         static ArrayList list_subjects = new ArrayList();
         static string[] namesArray;
-        static SearchWord_Description word_descrition = new SearchWord_Description();
+        static SearchWord_Description word_description = new SearchWord_Description();
+        static Boolean equalsigns;
+        static Boolean file;
+        static Boolean characters;
+        static Boolean comma;
+        static Boolean category_label;
+        static Boolean list;
+        static Boolean tourist;
+        static Boolean parenthesis;
+        static Boolean space;
+        static string str;
 
         static void Main(string[] args)
         {
@@ -37,8 +47,8 @@ namespace LinqToWikiBot
             else not_category(subject);
 
 
-            word_descrition.obtain_information(list_subjects);
-            word_descrition.Write_Console();
+            word_description.obtain_information(list_subjects);
+            word_description.Write_Console();
         }
 
         private static void category(string subject)
@@ -58,12 +68,13 @@ namespace LinqToWikiBot
             var array = results.ToArray();
 
             foreach (var result in array)
-                list_subjects.Add(result);
+               verifystring(result.ToString());
 
             list_subjects.Sort();
             Console.WriteLine("Done obtaining and processing subjects");
             Console.WriteLine("Number of subjects: " + list_subjects.Count);
         }
+
 
         private static void not_category(string subject)
         {
@@ -82,7 +93,7 @@ namespace LinqToWikiBot
                 //Obtaind the string from the URI type variable
                 response = client.DownloadString(address);
                 //Formats it in the right way
-                response = formatSubjectString(response);
+                formatSubjectString(response);
             }
             catch (Exception e)
             {
@@ -90,7 +101,8 @@ namespace LinqToWikiBot
             }
         }
 
-        private static string formatSubjectString(string response)
+
+        private static void formatSubjectString(string response)
         {
             /*
              * These string builders are used to format the string in the right way to be processed,
@@ -136,28 +148,42 @@ namespace LinqToWikiBot
              **/ 
             String ss = sb.ToString();
             namesArray = ss.Split('\n');
-            Boolean equalsigns;
-            Boolean file;
-            Boolean characters;
-            Boolean comma;
-            Boolean list;
-            Boolean tourist;
-            Boolean parenthesis;
-            Boolean space;
-            int commaIndex = 0;
+            
 
             for (int i = 0; i < 500 ; i++)
+                verifystring(namesArray[i]);
+
+            list_subjects.Sort();
+            Console.WriteLine("Done obtaining and processing subjects");
+            Console.WriteLine("Number of subjects: " + list_subjects.Count);
+
+        }
+
+        private static void verifystring(string str)
+        {
+
+            int commaIndex = 0;
+
+            /* Want to remove commas because for geography, the words after the commas define the states and country of the place
+             * which we do not care
+             **/
+
+            comma = str.Contains(",");
+            if (comma)
             {
-                /* Want to remove commas because for geograpthy, the words after the commas define the states and country of the place
-                 * which we do not care
-                 **/ 
-                comma = namesArray[i].Contains(",");
-                if (comma)
-                {
-                    commaIndex = namesArray[i].IndexOf(",");
-                    namesArray[i] = namesArray[i].Remove(commaIndex);
-                }
-                /*
+                commaIndex = str.IndexOf(",");
+                str = str.Remove(commaIndex);
+            }
+
+            category_label = str.Contains("Category:");
+
+            if (category_label)
+            {
+                commaIndex = str.IndexOf("Category:");
+                str = str.Remove(commaIndex);
+            }
+
+            /*
                  * file: looks to see if the string file appears in any of the strings
                  * characters: looks to see if any of the chars in the string are not chars expect for spaces
                  * List: check to see if the string starts with the keyword "List" some strings in Wikipedia do
@@ -165,37 +191,30 @@ namespace LinqToWikiBot
                  * Parentheses = checks for "(" and ")"
                  * Equalsigns = checks for "==" when subject are derives from other labels, these other label are defined with "==="
                  **/
-                file = Regex.IsMatch(namesArray[i], @"^File");
-                list = Regex.IsMatch(namesArray[i], @"^List");
-                characters = Regex.IsMatch(namesArray[i], @"[^\w\s]");
-                equalsigns = namesArray[i].Contains("==");
-                tourist = Regex.IsMatch(namesArray[i], @"Tourist");
-                parenthesis = Regex.IsMatch(namesArray[i], @"\(\)");
-                space = Regex.IsMatch(namesArray[i], @"^\s");
-                
-                /*
-                 * Logic to making sure it prints the right lines and it
-                 * empties the wrong elements
-                 **/
-                if (parenthesis == false && tourist == false && equalsigns == false && list == false && file == false && characters == false)
-                {
-                    //Some times the subject start with spaces, other times they do not, so of course ... we must check
-                    if (space)
-                        namesArray[i] = namesArray[i].Remove(0, 1);
-                }
+            file = Regex.IsMatch(str, @"^File");
+            list = Regex.IsMatch(str, @"^List");
+            characters = Regex.IsMatch(str, @"[^\w\s]");
+            equalsigns = str.Contains("==");
+            tourist = Regex.IsMatch(str, @"Tourist");
+            parenthesis = Regex.IsMatch(str, @"\(\)");
+            space = Regex.IsMatch(str, @"^\s");
 
-                else
-                    namesArray[i] = "";
-  
-                if (namesArray[i] != "")
-                    list_subjects.Add(namesArray[i]);
+            /*
+             * Logic to making sure it prints the right lines and it
+             * empties the wrong elements
+             **/
+            if (parenthesis == false && tourist == false && equalsigns == false && list == false && file == false && characters == false)
+            {
+                //Some times the subject start with spaces, other times they do not, so of course ... we must check
+                if (space)
+                    str = str.Remove(0, 1);
             }
 
-            list_subjects.Sort();
-            Console.WriteLine("Done obtaining and processing subjects");
-            Console.WriteLine("Number of subjects: " + list_subjects.Count);
+            else
+                str = "";
 
-            return response;
+            if (str != "")
+                list_subjects.Add(str);
         }
 
         private static Uri getAddress(string subject)
