@@ -36,7 +36,6 @@ namespace LinqToWikiBot
 
         static void Main(string[] args)
         {
-
             //Whatever wer are looking for
             Console.WriteLine("Input a subject");
             string subject = System.Console.ReadLine();
@@ -44,11 +43,27 @@ namespace LinqToWikiBot
             if (subject.StartsWith("Category"))
                 category(subject);
 
-            else not_category(subject);
+            else if (subject.StartsWith("Continents"))
+                continentsfunc();
+            else if (!subject.StartsWith("Category"))
+                not_category(subject);
 
+            list_subjects.Sort();
+            Console.WriteLine("Done obtaining and processing subjects");
+            Console.WriteLine("Number of subjects: " + list_subjects.Count);
 
             word_description.obtain_information(list_subjects);
             word_description.Write_Console();
+                
+        }
+
+        private static void continentsfunc()
+        {
+            String[] continents = new String[] { "Africa", "Antarctica", "Asia", "Europe", "North America", "South America", "Central America" };
+
+            foreach (string str in continents)
+                list_subjects.Add(str);
+
         }
 
         private static void category(string subject)
@@ -70,9 +85,6 @@ namespace LinqToWikiBot
             foreach (var result in array)
                verifystring(result.ToString());
 
-            list_subjects.Sort();
-            Console.WriteLine("Done obtaining and processing subjects");
-            Console.WriteLine("Number of subjects: " + list_subjects.Count);
         }
 
 
@@ -97,7 +109,7 @@ namespace LinqToWikiBot
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                Console.WriteLine(e.Message + " " + e.Data + " " + e.TargetSite);
             }
         }
 
@@ -116,7 +128,7 @@ namespace LinqToWikiBot
             Regex regex = new Regex(@"\\[\w+\\]");
 
             //this area gets rib of all the non used parts of the strings
-            int index_start = response.IndexOf("===");
+            int index_start = response.IndexOf("==");
             sb2.Append(response);
             sb2.Remove(0, index_start - 1);
             //sb2.Replace(" ", string.Empty);
@@ -138,9 +150,10 @@ namespace LinqToWikiBot
             }
 
             //it takes off whatever it is on the parameneters
-            sb.Replace("\r", "");
-            sb.Replace("[", "");
-            sb.Replace("]", "");
+            sb.Replace("\r", string.Empty);
+            sb.Replace("[", string.Empty);
+            sb.Replace("]", string.Empty);
+            sb.Replace("''", string.Empty);
 
             /*
              * I pass the stringBuilder to an string so I could split it based on the '\n'
@@ -152,10 +165,6 @@ namespace LinqToWikiBot
 
             for (int i = 0; i < 500 ; i++)
                 verifystring(namesArray[i]);
-
-            list_subjects.Sort();
-            Console.WriteLine("Done obtaining and processing subjects");
-            Console.WriteLine("Number of subjects: " + list_subjects.Count);
 
         }
 
