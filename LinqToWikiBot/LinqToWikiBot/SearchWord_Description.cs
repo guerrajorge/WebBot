@@ -84,7 +84,8 @@ namespace LinqToWikiBot
             }
 
             //removes point in the description
-            if (sb2.Length != 0) { sb2.Length -= 2; }
+            if (sb2.Length != 0 && sb2.Length != 1) 
+                sb2.Length -= 2; 
 
             /*
              * Inserts the interrogative pronouns based on the category
