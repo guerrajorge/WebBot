@@ -35,6 +35,7 @@ namespace LinqToWikiBot
         static Boolean country;
         static Boolean spaces;
         static string subject;
+        static string Category;
 
 
         static void Main(string[] args)
@@ -42,7 +43,11 @@ namespace LinqToWikiBot
             //Whatever wer are looking for
             Console.WriteLine("Input a subject");
             subject = System.Console.ReadLine();
+            Console.Write("Category: ");
+            Category = System.Console.ReadLine();
 
+            //This is used for debugging purposed ... will be removed for release product
+            word_description.sendsubject(subject);
             /**
              * This is used depending on how the category subjects are searched:
              * Category: -> Category:Software engineers, Category:Computer science awards, etc ...
@@ -64,7 +69,7 @@ namespace LinqToWikiBot
             Console.WriteLine("Number of subjects: " + list_subjects.Count);
 
             //obtain each description from the subject into list_subjects list
-            word_description.obtain_information(list_subjects);
+            word_description.obtain_information(list_subjects, Category);
             //print!!!
             word_description.Write_Console();
                 
@@ -115,6 +120,7 @@ namespace LinqToWikiBot
 
             WebClient client = new WebClient();
             obtainsubjects(address, client);
+            Console.WriteLine("");
         }
 
         private static void obtainsubjects(Uri address, WebClient client)
@@ -155,7 +161,8 @@ namespace LinqToWikiBot
                 flag = true;
             }
 
-            if (index_start < 2 && flag == true)
+            //if (index_start < 2 && flag == true)
+            else if (!flag)
             //this area gets rib of all the non used parts of the strings
             index_start = response.IndexOf("==");
        
@@ -196,7 +203,7 @@ namespace LinqToWikiBot
             //you can use any number
             for (int i = 0; i < 3000 ; i++)
                 verifystring(namesArray[i]);
-
+            list_subjects.Sort();
         }
 
         private static void verifystring(string str)
@@ -285,7 +292,7 @@ namespace LinqToWikiBot
             else
                 str = "";
 
-            if (str != "")
+            if (str != "" && !list_subjects.Contains(str))
                 list_subjects.Add(str);
         }
 

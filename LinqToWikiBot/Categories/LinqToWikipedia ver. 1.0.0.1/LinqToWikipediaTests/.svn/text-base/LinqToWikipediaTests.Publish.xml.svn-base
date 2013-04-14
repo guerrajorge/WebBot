@@ -1,0 +1,11 @@
+<publishData>
+  <publishTarget publishUrl="C:\Documents and Settings\a85369\My Documents\aspspider\linqtowikipedia\">
+    <file relUrl="bin/LinqToWikipedia.dll" publishTime="01/11/2010 17:46:48" />
+    <file relUrl="Web.config" publishTime="01/08/2010 18:58:54" />
+    <file relUrl="bin/LinqToWikipediaTests.dll" publishTime="01/11/2010 17:46:53" />
+    <file relUrl="bin/LinqToWikipedia.pdb" publishTime="01/11/2010 17:46:48" />
+    <file relUrl="WikipediaKeywordSearch.aspx" publishTime="01/10/2010 22:36:36" />
+    <file relUrl="WikipediaOpenSearch.aspx" publishTime="01/10/2010 22:35:58" />
+    <file relUrl="bin/LinqToWikipediaTests.pdb" publishTime="01/11/2010 17:46:53" />
+  </publishTarget>
+</publishData>

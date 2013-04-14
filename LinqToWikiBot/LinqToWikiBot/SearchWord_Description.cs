@@ -8,7 +8,6 @@ using System.IO;
 
 namespace LinqToWikiBot
 {
-    
 
     class SearchWord_Description
     {
@@ -17,22 +16,34 @@ namespace LinqToWikiBot
         static information_structure info_struc;
         static int rn;
         static Random random_gen;
+        static string category_subject;
+        static string[] subject_print = new string[2];
 
-
-
+        //use for debugging purposes
+        internal void sendsubject(string subject)
+        {
+            if (subject.Contains("Category"))
+                subject_print = subject.Split(':');
+            else subject_print[1] = subject;
+        }
+        //this is used for debugging purposes as well
         internal void Write_Console()
         {
             StringBuilder sb = new StringBuilder();
 
             foreach (KeyValuePair<int, information_structure> value in dictionary)
             {
-                sb.AppendLine(value.Value.question + "?");
-                sb.AppendLine(value.Value.answer + "    " + value.Value.wrong_answers[0]
-                    + "    " + value.Value.wrong_answers[1] + "    " + value.Value.wrong_answers[2]);
-                sb.AppendLine();
+                if (value.Value.question.Contains("Who is") || value.Value.question.Contains("What is") ||
+                    value.Value.question.Contains("Who are") || value.Value.question.Contains("What are"))
+                {
+                    sb.AppendLine(value.Value.question + "?");
+                    sb.AppendLine(value.Value.answer + "    " + value.Value.wrong_answers[0]
+                        + "    " + value.Value.wrong_answers[1] + "    " + value.Value.wrong_answers[2]);
+                    sb.AppendLine();
+                }
             }
 
-            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\Categories\wiki.xml"))
+            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\Categories\wiki_" + subject_print[1] + "_"+ category_subject + ".xml"))
             {
                 outfile.Write(sb.ToString());
             }
@@ -50,6 +61,7 @@ namespace LinqToWikiBot
             int index_are = 0;
             int point = 0;
             StringBuilder sb3 = new StringBuilder();
+            int indexarechanger = 0;
 
             //self explanatory, need to find the index
             //so we can know where the string actually begin and remove
@@ -57,6 +69,22 @@ namespace LinqToWikiBot
             index_is = info.IndexOf("is");
             index_are = info.IndexOf("are");
             point = info.LastIndexOf(".");
+
+            if (info.Contains("are a"))
+            {
+                sb2.Replace("are a", "is a");
+                info = info.Replace("are a", "is a");
+                index_is = info.IndexOf("is");
+                index_are = -1;
+            }
+
+            if (info.Contains("are an"))
+            {
+                sb2.Replace("are an", "is an");
+                info = info.Replace("are a", "is a");
+                index_is = info.IndexOf("is");
+                index_are = -1;
+            }
 
             /*if any of these index are less than zero, it means that
              * the IndexOf function did not find any string as "is" or "are"
@@ -80,6 +108,7 @@ namespace LinqToWikiBot
 
             else if (index_are > 0 && index_are < index_is)
             {
+                indexarechanger = info.IndexOf("are");
                 sb2.Remove(0, index_are - 1);
             }
 
@@ -90,14 +119,18 @@ namespace LinqToWikiBot
             /*
              * Inserts the interrogative pronouns based on the category
              **/
+            if (!category_subject.Contains("People")) 
             sb2.Insert(0, "What");
+            else
+            sb2.Insert(0, "Who");
+            
 
         }
 
-        internal void obtain_information(System.Collections.ArrayList list_subjects)
+        internal void obtain_information(System.Collections.ArrayList list_subjects, string Category)
         {
             StringBuilder sb2 = new StringBuilder();
-
+            category_subject = Category;
 
             for (int i = 0; i < list_subjects.Count; i++)
             {
@@ -129,6 +162,7 @@ namespace LinqToWikiBot
                      **/
                     formatString(sb2);
                     info_struc.question = sb2.ToString();
+                    info_struc.category = Category;
                     info_struc.wrong_answers = fill_wrong_answers(list_subjects);
                     //add the name and question to the dictionary list
                     dictionary.Add(i, info_struc);
