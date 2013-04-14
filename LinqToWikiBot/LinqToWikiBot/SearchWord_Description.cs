@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LinqToWikipedia;
 using System.IO;
+using System.Reflection;
 
 namespace LinqToWikiBot
 {
@@ -29,6 +30,14 @@ namespace LinqToWikiBot
         //this is used for debugging purposes as well
         internal void Write_Console()
         {
+
+            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            StringBuilder path_app = new StringBuilder();
+            path_app.Append(path.ToString());
+            path_app.Replace(@"\WebBot\LinqToWikiBot\LinqToWikiBot\bin\Debug", @"\Trivia-Game\TriviaGame\bin\");
+            path_app.Append(subject_print[1] + "_" + category_subject + ".xml");
+            path_app.Replace(" ", string.Empty);
+
             StringBuilder sb = new StringBuilder();
 
             foreach (KeyValuePair<int, information_structure> value in dictionary)
@@ -43,7 +52,7 @@ namespace LinqToWikiBot
                 }
             }
 
-            using (StreamWriter outfile = new StreamWriter(@"C:\Users\Oer\Documents\GitHub\WebBot\LinqToWikiBot\Categories\wiki_" + subject_print[1] + "_"+ category_subject + ".xml"))
+            using (StreamWriter outfile = new StreamWriter(path_app.ToString()))
             {
                 outfile.Write(sb.ToString());
             }
