@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/36053/production/1.0.0.0/LinqToWikipedia/Interfaces
+END
+IWikipediaOpenSearchResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/36053/production/1.0.0.0/LinqToWikipedia/Interfaces/IWikipediaOpenSearchResult.cs
+END
+IWikipediaKeywordSearchResult.cs
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/36053/production/1.0.0.0/LinqToWikipedia/Interfaces/IWikipediaKeywordSearchResult.cs
+END
+IWikipediaQueryable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/36053/production/1.0.0.0/LinqToWikipedia/Interfaces/IWikipediaQueryable.cs
+END
