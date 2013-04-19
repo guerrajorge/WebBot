@@ -40,40 +40,52 @@ namespace LinqToWikiBot
 
         static void Main(string[] args)
         {
-            //Whatever wer are looking for
-            Console.WriteLine("Input a subject");
-            subject = System.Console.ReadLine();
-            Console.Write("Category: ");
-            Category = System.Console.ReadLine();
+            for(int i=0;i<3;i++){
+                //Whatever wer are looking for
+                Console.WriteLine("Input a subject");
+                subject = System.Console.ReadLine();
+                Console.Write("Category: ");
+                Category = System.Console.ReadLine();
+                Boolean flag_continuation = true;
 
-            //This is used for debugging purposed ... will be removed for release product
-            word_description.sendsubject(subject);
-            /**
-             * This is used depending on how the category subjects are searched:
-             * Category: -> Category:Software engineers, Category:Computer science awards, etc ...
-             * Continents: Continents
-             * !Category: Forbes Celebrity 100, List of Casinos,List of television programs by name List of television programs by name, etc ...
-             * and more to come!!
-             **/
-            if (subject.StartsWith("Category"))
-                category(subject);
+                //This is used for debugging purposed ... will be removed for release product
+                word_description.sendsubject(subject);
+                /**
+                 * This is used depending on how the category subjects are searched:
+                 * Category: -> Category:Software engineers, Category:Computer science awards, etc ...
+                 * Continents: Continents
+                 * !Category: Forbes Celebrity 100, List of Casinos,List of television programs by name List of television programs by name, etc ...
+                 * and more to come!!
+                 **/
+                if (subject.StartsWith("Category"))
+                    category(subject);
 
-            else if (subject.StartsWith("Continents"))
-                continentsfunc();
-            else if (!subject.StartsWith("Category"))
-                not_category(subject);
+                else if (subject.StartsWith("Continents"))
+                    continentsfunc();
+                else if (subject.StartsWith("List"))
+                    not_category(subject);
+                else
+                {
+                    word_description.Obtain_information_singlesubject(subject);
+                    flag_continuation = false;
+                }
 
-            //This 3 lines are used just to know that categories were pulled and will be processed
-            list_subjects.Sort();
-            Console.WriteLine("Done obtaining and processing subjects");
-            Console.WriteLine("Number of subjects: " + list_subjects.Count);
+                if (flag_continuation)
+                {
+                    //This 3 lines are used just to know that categories were pulled and will be processed
+                    list_subjects.Sort();
+                    Console.WriteLine("Done obtaining and processing subjects");
 
-            //obtain each description from the subject into list_subjects list
-            word_description.obtain_information(list_subjects, Category);
-            //print!!!
-            word_description.Write_Console();
-                
-        }
+                    //obtain each description from the subject into list_subjects list
+                    word_description.obtain_information(list_subjects, Category);
+                    //print!!!
+                    word_description.Write_Console();
+                    list_subjects.Clear();
+                }
+
+                Console.ReadLine();
+            }
+    }
 
         private static void continentsfunc()
         {
@@ -201,7 +213,7 @@ namespace LinqToWikiBot
             
             //I used 3000 because I wanted to brake the app but of course
             //you can use any number
-            for (int i = 0; i < 3000 ; i++)
+            for (int i = 0; i < 200 ; i++)
                 verifystring(namesArray[i]);
             list_subjects.Sort();
         }
