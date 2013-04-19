@@ -148,9 +148,6 @@ namespace LinqToWikiBot
             StringBuilder sb2 = new StringBuilder();
 
 
-            for (int i = 0; i < 1; i++)
-            {
-
                 /*
                  * creates object: opensearch, which uses:
                  * subject = whatever it is being search in Wikipedia
@@ -178,7 +175,7 @@ namespace LinqToWikiBot
                     formatString_singlesubect(sb2);
                     info_struc.question = sb2.ToString();
                     //add the name and question to the dictionary list
-                    dictionary.Add(i, info_struc);
+                    dictionary.Add(0, info_struc);
                     //clears sb2 becuase if not then everytime we run dictionary.add ... whatever information is
                     //in sb2 gets added to the second string, which we dont want DUH!
                     sb2.Clear();
@@ -186,7 +183,7 @@ namespace LinqToWikiBot
 
                 Write_Console_singlesubject();
                 dictionary.Clear();
-            }
+            
         }
 
         private void formatString_singlesubect(StringBuilder sb2)
